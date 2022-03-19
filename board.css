@@ -1,0 +1,45 @@
+body {
+  width: 80%;
+  margin: auto;
+}
+
+.theme {
+  background-color: #CCFFCC;
+  font-size: 20px;
+  padding: 5px;
+}
+
+
+
+label {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 150px;
+}
+
+.title {
+  width: 400px;
+  padding: 3px;
+  margin-bottom: 30px;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+
+
+
+.btn-submit {
+  position: relative;
+  left: 500px;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  color: #fff;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: 1.0s;
+}
+
+ul {
+  list-style: none;
+}

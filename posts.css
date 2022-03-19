@@ -1,0 +1,35 @@
+body {
+  width: 80%;
+  margin: auto;
+}
+
+.theme {
+  background-color: #CCFFCC;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.comment {
+  width: 200px;
+  height: 200px;
+  background-color: #CCFFCC;
+}
+
+.post_comment {
+  background-color: #CCFFCC;
+}
+.post {
+  width: 200px;
+  height: 200px;
+  background-color: #CCFFCC;
+  margin-bottom: 30px;
+  position: relative;
+}
+li {
+  list-style: none;
+}
+
+.delete {
+  position: absolute;
+  bottom: 0;
+}
