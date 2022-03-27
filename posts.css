@@ -15,7 +15,7 @@ body {
   background-color: #CCFFCC;
 }
 
-.post_comment {
+/*.post_comment {
   background-color: #CCFFCC;
 }
 .post {
@@ -24,7 +24,7 @@ body {
   background-color: #CCFFCC;
   margin-bottom: 30px;
   position: relative;
-}
+}*/
 li {
   list-style: none;
 }

@@ -1,5 +1,4 @@
 <?php
-
 require 'validation.php';
 $errors = validation($_POST);  #エラーメッセージを変数$errorsに保持
 
@@ -7,13 +6,14 @@ $id = uniqid();
 
 $fp = fopen('data.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    fputcsv($fp, [$id,$_POST['title'], $_POST['body']]);
-    rewind($fp);
+    if(empty($errors)){
+      fputcsv($fp, [$id,$_POST['title'], $_POST['body']]);
+      rewind($fp);
+      }
 }
 while ($row = fgetcsv($fp)) {
     $rows[] = $row;
 }
-
 fclose($fp);
 ?>
 
@@ -36,7 +36,7 @@ fclose($fp);
           }
         ?>
       <?php echo '</ul>'; ?>
-    <?php endif ?>
+<?php endif ?>
 
 <form action="" method="post" onSubmit="return checkSubmit()">
       <div>
